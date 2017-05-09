@@ -1,3 +1,16 @@
+Skip to content
+Features Business Explore Pricing
+This repository
+Search
+Sign in or Sign up
+ Watch 0  Star 0  Fork 0 lazychicken/koukai
+ Code  Issues 0  Pull requests 0  Projects 0  Pulse  Graphs
+Branch: master Find file Copy pathkoukai/index.html
+e49a829  8 days ago
+@keiamano keiamano Update index.html
+1 contributor
+RawBlameHistory
+Executable File  1368 lines (1230 sloc)  47.9 KB
 <!doctype html>
 <html>
 <head>
@@ -43,7 +56,6 @@
         $('.res-nav_click').click(function(){
 		$('ul.toggle').slideToggle(600)
 			});
-
 	$(document).ready(function() {
 $(window).bind('scroll', function() {
          if ($(window).scrollTop() > 0) {
@@ -53,10 +65,7 @@ $(window).bind('scroll', function() {
              $('#header_outer').removeClass('fixed');
          }
     });
-
 	  });
-
-
 		    });
 function resizeText() {
 	var preferredWidth = 767;
@@ -66,7 +75,6 @@ function resizeText() {
 	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
 	$(".divclass").css("font-size", newFontSizeTitle)
 }
-
 </script>
 </head>
 <body>
@@ -78,7 +86,6 @@ function resizeText() {
 
 <!--
           メニューボタン
-
           data-toggle : ボタンを押したときにNavbarを開かせるために必要
           data-target : 複数navbarを作成する場合、ボタンとナビを紐づけるために必要
 -->
@@ -160,7 +167,7 @@ function resizeText() {
             <div class="top_left_cont flipInY wow animated">
               <h3>2017年度　熊本大学公開講座</h3>
               <h2>インストラクショナルデザイン 入門編/応用編<br/>2017年度の日程・開催場所が決定しました！ 申込受付は、後日開始します。</h2>
-              
+
               <a href="#service2" class="learn_more2">詳細</a> </div>
           </div>
         </div>、
@@ -198,6 +205,7 @@ function resizeText() {
       </br>*昨年度までに入門編の事後テストに合格し修了認定された方や、他の場でIDを学習し入門編の学習目標を達成している方などは、応用編から受講可能です。ただし、その際には、別途ご案内する応用編の前提課題へ取り組み、合格基準を満たす必要があります。
 			</div>
 			<div class="col-lg-4 col-sm-4 wow fadeInLeft delay-05s">
+      <h2>メンバー 紹介</h2>
 				<div class="suzuki delay-03s animated wow  zoomIn">
 					<figure id="ksuzuki"><img src="img/ksuzuki_s.jpg" alt="suzuki_katuaki" >
 		  			</br>
@@ -207,6 +215,33 @@ function resizeText() {
 						</figcaption>
 					</figure>
 				</div>
+        <div class="tuduku delay-03s animated wow  zoomIn">
+          <figure id="studuku"><img src="img/studuku_s.jpg" alt="tuduku_shigeki" >
+            </br>
+            <figcaption>都竹茂樹(つづく　しげき)
+              </br>教授
+              </br><a href="http://www.cps.kumamoto-u.ac.jp/syogaigakushu/gakusyujin/staff_tsuzuku.php">ウェブサイト</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hiraoka delay-03s animated wow  zoomIn">
+          <figure id="nhiraoka"><img src="img/nhiraoka_s.jpg" alt="hiraoka_naoshi" >
+            </br>
+            <figcaption>平岡 斉士(ひらおか　なおし)
+            </br>准教授
+            </br>ここに説明
+            </figcaption>
+          </figure>
+        </div>
+        <div class="amano delay-03s animated wow  zoomIn">
+          <figure id="kamano"><img src="img/kamano_s.jpg" alt="amano_kei" >
+            </br>
+            <figcaption>天野　彗(あまの　けい)
+              </br>熊本大学大学院教授教授システム学専攻長
+            </br>ここに説明
+            </figcaption>
+          </figure>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -528,7 +563,7 @@ function resizeText() {
 						住所:大阪府吹田市江坂町1丁目13−41</br></br>
 						¥7,500</br>
 						＊申し込み受け付け開始前</br></p>
-					
+
 
 				</div>
 			</div>
@@ -585,7 +620,7 @@ function resizeText() {
 						住所:大阪府吹田市江坂町1丁目13−41</br></br>
 						¥7,500</br>
 						＊申し込み受け付け開始前</br></p>
-						
+
 				</div>
 			</div>
 
@@ -797,10 +832,7 @@ function resizeText() {
     	<h2>Portfolio</h2>
     	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
 	</div>
-
-
 </section>
-
 -->
 
 <section class="main-section" id="client_outer"><!--main-section client-part-start-->
@@ -1011,9 +1043,7 @@ function resizeText() {
         $('.res-nav_click').click(function(){
             $('.main-nav').slideToggle();
             return false
-
         });
-
     });
 </script>
 -->
@@ -1036,7 +1066,6 @@ function resizeText() {
   </script>
 <script type="text/javascript">
 	$(window).load(function(){
-
 		$('a').bind('click',function(event){
 			var $anchor = $(this);
       /*
@@ -1048,23 +1077,17 @@ function resizeText() {
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 1000);
-
 			event.preventDefault();
 		});
 	})
 </script>
 
 <!--<script type="text/javascript">
-
 $(window).load(function(){
-
-
   var $container = $('.portfolioContainer'),
       $body = $('body'),
       colW = 350,
       columns = null;
-
-
   $container.isotope({
     // disable window resizing
     resizable: true,
@@ -1072,7 +1095,6 @@ $(window).load(function(){
       columnWidth: colW
     }
   });
-
   $(window).smartresize(function(){
     // check if columns has changed
     var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
@@ -1083,35 +1105,24 @@ $(window).load(function(){
       $container.width( columns * colW )
         .isotope('reLayout');
     }
-
   }).smartresize(); // trigger resize to set container width
   $('.portfolioFilter a').click(function(){
         $('.portfolioFilter .current').removeClass('current');
         $(this).addClass('current');
-
         var selector = $(this).attr('data-filter');
         $container.isotope({
-
             filter: selector,
          });
          return false;
     });
-
 });
-
 </script>
-
-
 -->
 
 <script type="text/javascript">
-
-
   jQuery(document).ready(function($){
 // Portfolio Isotope
 	var container = $('#portfolio-wrap');
-
-
 	container.isotope({
 		animationEngine : 'best-available',
 	  	animationOptions: {
@@ -1120,7 +1131,6 @@ $(window).load(function(){
 	   	},
 		layoutMode: 'fitRows'
 	});
-
 	$('#filters a').click(function(){
 		$('#filters a').removeClass('active');
 		$(this).addClass('active');
@@ -1129,13 +1139,9 @@ $(window).load(function(){
         setProjects();
 	  	return false;
 	});
-
-
 		function splitColumns() {
 			var winWidth = $(window).width(),
 				columnNumb = 1;
-
-
 			if (winWidth > 1024) {
 				columnNumb = 4;
 			} else if (winWidth > 900) {
@@ -1145,42 +1151,33 @@ $(window).load(function(){
 			} else if (winWidth < 479) {
 				columnNumb = 1;
 			}
-
 			return columnNumb;
 		}
-
 		function setColumns() {
 			var winWidth = $(window).width(),
 				columnNumb = splitColumns(),
 				postWidth = Math.floor(winWidth / columnNumb);
-
 			container.find('.portfolio-item').each(function () {
 				$(this).css( {
 					width : postWidth + 'px'
 				});
 			});
 		}
-
 		function setProjects() {
 			setColumns();
 			container.isotope('reLayout');
 		}
-
 		container.imagesLoaded(function () {
 			setColumns();
 		});
-
-
 		$(window).bind('resize', function () {
 			setProjects();
 		});
-
 });
 $( window ).load(function() {
 	jQuery('#all').click();
 	return false;
 });
-
 //charts
 var chart = AmCharts.makeChart("chartdiv", {
   "type": "pie",
@@ -1236,8 +1233,6 @@ var chart = AmCharts.makeChart("chartdiv", {
     "enabled": true
   }
 });
-
-
 var chart = AmCharts.makeChart("chartdiv3", {
   "type": "pie",
   "startDuration": 0,
@@ -1345,23 +1340,19 @@ var chart = AmCharts.makeChart("chartdiv2", {
     "enabled": true
   }
 });
-
-
 chart.addListener("init", handleInit);
-
 chart.addListener("rollOverSlice", function(e) {
   handleRollOver(e);
 });
-
 function handleInit(){
   chart.legend.addListener("rollOverItem", handleRollOver);
 }
-
 function handleRollOver(e){
   var wedge = e.dataItem.wedge.node;
   wedge.parentNode.appendChild(wedge);
 }
-
 </script>
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
