@@ -10,6 +10,51 @@
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" type="text/css">
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+<!-- for slider-->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+	<!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
+    
+    </style>
 <!--
 <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
@@ -28,6 +73,7 @@
 <script type="text/javascript" src="js/amcharts.js"></script>
 <script type="text/javascript" src="js/pie.js"></script>
 <script type="text/javascript" src="js/light.js"></script>
+	
 
 
 
@@ -685,177 +731,62 @@ function resizeText() {
 
 <!-- Portfolio -->
 <section id="Portfolio" class="content">
-
-  <!-- Container -->
-  <div class="container portfolio-title">
-
-    <!-- Section Title -->
-    <div class="section-title">
-      <h2>これまでの様子</h2>
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../photo/20161.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20162.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20163.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20164.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20165.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20166.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20167.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20168.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20169.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/201610.jpg)"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
     </div>
-    <!--/Section Title -->
-
-  </div>
-  <!-- Container -->
-
-  <div class="portfolio-top"></div>
-
-  <!-- Portfolio Plus Filters -->
-  <div class="portfolio">
-
-    <!-- Portfolio Filters -->
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-				<li><a class="" href="#" data-filter=".tokyo2015">
-					<h5>2015 東京</h5>
-					</a></li>
-				<li><a class="" href="#" data-filter=".fukuoka2015">
-					<h5>2015 福岡</h5>
-					</a></li>
-      </ul>
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../photo/20161.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20162.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20163.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20164.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20165.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20166.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20167.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20168.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/20169.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(../photo/201610.jpg)"></div>
+        </div>
     </div>
-    <!--/Portfolio Filters -->
 
-    <!-- Portfolio Wrap -->
-    <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap">
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
 
-			<!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   tokyo2015">
-        <div class="portfolio-image"> <img src="photo/tokyo2015nyuumon7.jpg"  alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  -->
-
-      <!-- Portfolio Item Video Expander  -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   tokyo2015">
-        <div class="portfolio-image"> <img src="photo/tokyo2015nyuumon8.jpg"  alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item Video Expander  -->
-
-      <!-- Portfolio Item Normal Expander -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   tokyo2015">
-        <div class="portfolio-image"> <img src="photo/tokyo2015nyuumon9.jpg"  alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item Normal Expander -->
-
-      <!-- Portfolio Item FullScreen Expander -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   tokyo2015">
-        <div class="portfolio-image"> <img src="photo/tokyo2015nyuumon10.jpg"  alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!-- Portfolio Item FullScreen Expander -->
-
-      <!-- Portfolio Item FullScreen Expander -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   fukuoka2015">
-        <div class="portfolio-image"> <img src="photo/fukuoka2015nyuumon1.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item FullScreen Expander -->
-
-      <!-- Portfolio Item Normal Expander -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   fukuoka2015">
-        <div class="portfolio-image"> <img src="photo/fukuoka2015nyuumon2.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item Normal Expander -->
-
-      <!-- Portfolio Item External Project  -->
-			<div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   fukuoka2015">
-        <div class="portfolio-image"> <img src="photo/fukuoka2015nyuumon3.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item External Project  -->
-
-      <!-- Portfolio Item With PrettyPhoto  -->
-      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   fukuoka2015">
-        <div class="portfolio-image"> <img src="photo/fukuoka2015nyuumon4.jpg" alt="Portfolio 1"> </div>
-        <div class="project-overlay">
-          <div class="project-info">
-            <div class="zoom-icon"></div>
-            <h4 class="project-name">2015</h4>
-            <p class="project-categories">入門編</p>
-          </div>
-        </div>
-        </a> </div>
-      <!--/Portfolio Item With PrettyPhoto  -->
-
-
-
-    </div>
-    <!--/Portfolio Wrap -->
-
-  </div>
-  <!--/Portfolio Plus Filters -->
-
-  <div class="portfolio-bottom"></div>
-
-  <!-- Project Page Holder-->
-  <div id="project-page-holder">
-    <div class="clear"></div>
-    <div id="project-page-data"></div>
-  </div>
-  <!--/Project Page Holder-->
+    <!-- Initialize Swiper -->
+    <script>
+    var galleryTop = new Swiper('.gallery-top', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
+    
+    </script>
 
 </section>
-<!--/Portfolio -->
 
-<!--new_portfolio-->
-
-<!--
-<section class="main-section paddind" id="Portfolio">
-	<div class="container">
-    	<h2>Portfolio</h2>
-    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
-	</div>
-</section>
--->
 
 <section class="main-section" id="client_outer"><!--main-section client-part-start-->
   <h2>参加者の声</h2>
